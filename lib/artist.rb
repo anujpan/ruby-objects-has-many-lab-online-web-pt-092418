@@ -8,8 +8,8 @@ class Artist
   end
   
   def add_song(song)
-    @songs.push(song)
     binding.pry
+    @songs.push(song)
     song.artist = self
   end
 end
