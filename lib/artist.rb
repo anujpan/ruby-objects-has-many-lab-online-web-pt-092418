@@ -14,7 +14,8 @@ class Artist
   
   def add_song_by_name(name)
     song = Song.new(name)
-    @songs.push()
+    @songs.push(song)
+    song.artist = self
     binding.pry
   end
 end
