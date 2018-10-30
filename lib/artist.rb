@@ -16,5 +16,6 @@ class Artist
     song = Song.new(name)
     @songs.push(song)
     song.artist = self
+    @@song_count += 1
   end
 end
