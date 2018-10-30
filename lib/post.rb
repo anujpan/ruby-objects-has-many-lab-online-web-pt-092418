@@ -4,12 +4,14 @@ class Post
    def initialize(title)
     @title = title
     @author = author
-    @@all.push(self_
+    @@all.push(self)
   end
-   def self.all
+  
+  def self.all
     @@all
   end
-   def author_name
+  
+  def author_name
     if self.author
       self.author.name
     else
