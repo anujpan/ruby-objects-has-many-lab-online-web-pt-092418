@@ -16,6 +16,5 @@ class Artist
     song = Song.new(name)
     @songs.push(song)
     song.artist = self
-    binding.pry
   end
 end
