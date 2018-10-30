@@ -8,7 +8,6 @@ class Artist
   end
   
   def add_song(song)
-    binding.pry
     @songs.push(song)
     song.artist = self
   end
